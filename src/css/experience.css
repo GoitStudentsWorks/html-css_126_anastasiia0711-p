@@ -10,7 +10,7 @@
 }
 
 .experience-container-text {
-    width: 288px;
+    max-width: 288px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -37,6 +37,7 @@ white-space: normal;
 
 
 .experience-item {
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,11 +47,12 @@ white-space: normal;
 
 .experience-item:nth-child(7)
  {
-    object-fit: cover;
     height: 391px;
 }
 
 .experience-item img {
+     object-fit: cover;
+     object-position: center;
     border-radius: 32px;
     height: 100%;
     overflow: hidden;
@@ -117,7 +119,7 @@ height: 336px;
 }
 }
 
-@media screen  and (min-width: 1158px) {
+@media screen  and (min-width: 1440px) {
 
     .experience {
         padding: 64px;
