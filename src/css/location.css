@@ -3,11 +3,6 @@
   padding-bottom: 64px;
 }
 
-.location-container {
-  width: 100%;
-  max-width: 450px;
-}
-
 .location-subtitle,
 .contact-link,
 .contact-address,
@@ -149,10 +144,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .location-container {
-    max-width: 704px;
-  }
-
   .location-content {
     display: flex;
     flex-direction: column;
@@ -186,7 +177,6 @@
 
 @media only screen and (min-width: 1440px) {
   .location-container {
-    max-width: 1312px;
     display: flex;
     flex-direction: row;
     gap: 24px;
