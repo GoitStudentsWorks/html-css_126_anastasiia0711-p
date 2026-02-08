@@ -25,7 +25,6 @@
 .input-container {
     position: relative;
     display: inline-block;
-    padding-bottom: 20px;
 }
 
 
@@ -61,7 +60,7 @@
 
 .label-form-email {
     position: absolute;
-    bottom: 0;
+    bottom: -19px;
     left: 0;
     display: none;
     color: #7f1c1c;
@@ -127,6 +126,10 @@
     .input-form-email {
         width: 340px;
         height: 44px;
+    }
+
+    .label-form-email {
+        bottom: -17px;
     }
 
     .button-send {
