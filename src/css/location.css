@@ -16,6 +16,7 @@
   font-weight: 600;
   line-height: 1.5;
   text-transform: capitalize;
+  margin-bottom: 16px;
 }
 
 .location-title {
@@ -24,7 +25,6 @@
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: #0b0803;
-  margin-top: 16px;
   margin-bottom: 24px;
   text-transform: uppercase;
 }
@@ -40,26 +40,21 @@
 
 .contact-list {
   list-style: none;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 40px;
 }
 
 .contact-item {
-  display: block;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .contact-icon {
   display: block;
   fill: #0b0803;
-}
-
-.contact-icon-link {
-  display: block;
-  margin-bottom: 16px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info {
@@ -76,7 +71,6 @@
   line-height: 1.4;
   letter-spacing: -0.01em;
   color: #0b0803;
-  margin-bottom: 8px;
   text-transform: uppercase;
 }
 
@@ -92,16 +86,13 @@
 .contact-link:hover,
 .contact-link:focus,
 .location-direction:hover,
-.location-direction:focus,
-.contact-icon-link:hover,
-.contact-icon-link:focus {
+.location-direction:focus {
   opacity: 0.4;
   outline: none;
 }
 
 .contact-link:active,
-.location-direction:active,
-.contact-icon-link:active {
+.location-direction:active {
   opacity: 0.6;
 }
 
@@ -120,6 +111,7 @@
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
+  margin-top: 16px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -151,31 +143,16 @@
   }
 
   .contact-list {
-    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     gap: 40px;
-    margin-bottom: 16px;
   }
 
   .contact-item {
-    margin-bottom: 0;
     flex: 1;
-  }
-
-  .contact-item:last-child {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .location-direction {
-    margin-top: 16px;
   }
 
   .location-map {
     height: 377px;
-    margin-top: 32px;
   }
 }
 
@@ -198,25 +175,12 @@
   }
 
   .contact-list {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    margin: 0;
-    width: auto;
   }
 
   .contact-item {
     flex: none;
     width: auto;
-    margin-bottom: 0;
-  }
-
-  .location-direction {
-    align-self: flex-start;
-    margin-top: 16px;
-    margin-left: 0;
-    margin-right: auto;
   }
 
   .location-map {
