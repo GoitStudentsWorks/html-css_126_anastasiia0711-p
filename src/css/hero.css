@@ -102,6 +102,17 @@
   }
 }
 
+@media (max-width: 374px) {
+  .hero-title {
+    width: 100%;
+
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1440px) {
   .hero {
     padding-top: 259px;
